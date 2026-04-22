@@ -64,18 +64,6 @@
   <li><code>scripts/framegen.py</code>: Python script for generating Ethernet test frames.</li>
 </ul>
 
-<h2>Technologies Used</h2>
-
-<ul>
-  <li>VHDL</li>
-  <li>FPGA</li>
-  <li>Xilinx Artix-7 XC7A35T</li>
-  <li>Python</li>
-  <li>Scapy</li>
-  <li>Wireshark</li>
-  <li>Active-HDL</li>
-  <li>Vivado</li>
-</ul>
 
 <h2>Simulation Results</h2>
 
@@ -100,21 +88,34 @@
 <h2>Limitations</h2>
 
 <ul>
-  <li>Hardware-level validation on the physical FPGA board was not completed in this phase.</li>
-  <li>Simulation cannot reproduce all real-world effects such as noise, network delay, or NIC-specific behavior.</li>
-  <li>CRC verification and end-to-end hardware testing can be added in future work.</li>
+  <li>Evaluation is currently limited to simulation; full hardware deployment is not included in this phase</li>
+  <li>Real-world network effects such as jitter, noise, and hardware I/O timing are not captured in simulation</li>
+  <li>CRC validation is not implemented in the current design</li>
 </ul>
 
 <h2>Future Work</h2>
 
 <ul>
-  <li>Full deployment on the FPGA board.</li>
+  <li>Deployment on physical FPGA hardware and timing analysis.</li>
   <li>CRC checking for stronger frame validation.</li>
-  <li>Rule-based filtering for MAC, EtherType, and payload patterns.</li>
+  <li>Extension to rule-based filtering (MAC, EtherType, payload patterns)</li>
   <li>Packet logging and statistics counters.</li>
-  <li>Optional lightweight inspection features for network security applications.</li>
 </ul>
 
+<h2>Technologies Used</h2>
+
+<ul>
+  <li>VHDL</li>
+  <li>FPGA</li>
+  <li>Xilinx Artix-7 XC7A35T</li>
+  <li>Python</li>
+  <li>Scapy</li>
+  <li>Wireshark</li>
+  <li>Active-HDL</li>
+</ul>
+
+
+<p><strong>Authors:</strong> <a href="https://github.com/Spitamo">Seyed Saeed Razavi</a> · <a href="https://github.com/sorooshdp">sorooshdp</a> · <a href="https://github.com/mrpreza">Reza paktinat</a></p>
 
 
 </body>
